@@ -30,7 +30,7 @@ class App extends React.Component{
     
     render() {
         return (
-            <div className="ui container">
+            <div className="dark ui container">
                 <SearchBar onFormSubmit={this.handleSubmit}/>
                 <div style={{marginTop:"10px"}} className="ui grid">
                     
@@ -38,7 +38,7 @@ class App extends React.Component{
                         <div className="eleven wide column">
                             <VideoDetail video={this.state.selectedVideo} />
                         </div>
-                        <div className="five wide column">
+                        <div className="side-list five wide column">
                             <VideoList onVideoSelect = {this.onVideoSelect} videos={this.state.videos}/>
                         </div>
                     </div>
